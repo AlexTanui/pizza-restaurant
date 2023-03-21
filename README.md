@@ -1,37 +1,32 @@
-# Pizza Restaurant API
+# Restaurant Pizza API 
 
 This is a Rails API for tracking pizza restaurants. It has the following resources:
 
 - Restaurants
 - Pizzas
-- Restaurant Pizzas(a join table for restaurants and pizzas)
-
-- Deployed link
-
-      code-rr2i.onrender.com/pizzas
 
 
 ## Requirements
 
 To use this API, you must have:
 
-- ruby -v 2.7.4
+- ruby -v 3.0.2
 
 - rails -v 7.0.4.3
 
--Postgress installed on your machine.
+-Sqlite3 installed on your machine.
 
-### Installation
+### Usage 
 
 To install and use this API, follow these steps:
 
 1. Clone the repository
 
-   git clone https://https://github.com/ShuaibShaban/codechallenge-4
+   git clone ``https://github.com/AlexTanui/pizza-restaurant.git``
 
 2. install the dependencies
 
-   cd fast-food
+   cd Pizza-Restaurant
 
    bundle install
 
@@ -43,35 +38,9 @@ To install and use this API, follow these steps:
 
 4. Start the server
 
-   rails server
+   rails s
 
 Once the server is up and runnning, you should be able to access the API at `https://localhost:3000`.
-
-### Models
-
-- This API has the following models:
-
-#### Restaurant
-
-- A `Restaurant` has many `pizza`s through `RestaurantPizza`
-
-Attributes:
-
-- `name`:string
-
-- `ingredients`:string
-
-#### RestaurantPizza
-
-A `RestaurantPizza` belongs to a `Restaurant` and belongs to a `pizza`.
-
-Attributes:
-
-- `price`:integer
-
-#### Validations
-
-The `RestaurantPizza` model has a validation for the `price` attribute, which must be between 1 and 30.
 
 #### Routes
 
@@ -127,11 +96,14 @@ git[ { "id": 1, "name": "Sottocasa NYC", "address": "298 Atlantic Ave, Brooklyn,
 { "id": 2, "name": "Pepperoni",
 "ingredients": "Dough, Tomato Sauce, Cheese, Pepperoni" }]
 
-#### POST https://code-rr2i.onrender.com/restaurant_pizzas
+# Author
 
-- Creates a new restaurant pizza associated with an existing restaurant and pizza.
+This project was contributed by :
+ - [Alex Tanui](https://github.com/AlexTanui/Petfinder-phase3)
+ 
 
-- Example request body:
 
-{
-"price": 5
+
+# License
+The project is licensed `ISC`
+
